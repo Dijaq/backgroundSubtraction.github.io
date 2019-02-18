@@ -41,7 +41,7 @@ or write "make exec"
 ![Alt text](https://github.com/Dijaq/BackgroundSubstraction/blob/master/datos/OwnVideo.PNG?raw=true "Title")
 
 ## Video
-<iframe width="1244" height="704" src="https://www.youtube.com/embed/Le7zD2T532w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/Le7zD2T532w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Fuentes
 - [1] Lili Guo, Dan Xu, and Zhenping Qiang, “Background Subtraction using Local SVD Binary Pattern”.
