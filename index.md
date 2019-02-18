@@ -1,6 +1,3 @@
-# Background Substraction using Local SVD Binary Pattern
-El presente proyecto es una implementación en c++ del algoritmo LSBP
-
 # Getting Started
 Requirements:
 - Sistema Operativo: Ubuntu
