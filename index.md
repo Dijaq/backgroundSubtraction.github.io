@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+# Background Substraction using Local SVD Binary Pattern
+El presente proyecto es una implementación en c++ del algoritmo LSBP
 
-You can use the [editor on GitHub](https://github.com/Dijaq/backgroundSubtraction.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+# Getting Started
+Requirements:
+- Sistema Operativo: Ubuntu
+- Install CUDA
+- Opencv 3.2.0 o superior
+- Compilador gcc, g++
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+To run the code:
+- Clone o download the source code.
+- Open a terminal in the repository folder.
+- Compile with the command:
+-using threads
+g++ local_svd.cpp -fopenmp -o main -std=c++11 -lpthread -lstdc++fs  -DWITH_CUDA=ON -larmadillo `pkg-config --cflags --libs opencv`
+- using cuda
+nvcc local_svd.cu -o main2 -std=c++11 -lpthread  -larmadillo `pkg-config --cflags --libs opencv`
 
-### Markdown
+Using threads
+or write "make"
+- Run with the command:
+./main
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Using cuda
+or write "make exec"
+- Run with the command:
+./main2
 
-```markdown
-Syntax highlighted code block
+# 1. Framework[1]
+![Alt text](https://github.com/Dijaq/BackgroundSubstraction/blob/master/datos/Framework.PNG?raw=true "Title")
 
-# Header 1
-## Header 2
-### Header 3
+# 2. Pseudocodigo[1]
+![Alt text](https://github.com/Dijaq/BackgroundSubstraction/blob/master/datos/Pseucodigo.PNG?raw=true "Title")
 
-- Bulleted
-- List
+# 3. Results
+## 3.1 Time comparation
+![Alt text](https://github.com/Dijaq/BackgroundSubstraction/blob/master/datos/Table.PNG?raw=true "Title")
 
-1. Numbered
-2. List
+## 3.2 CDnet 2012
+![Alt text](https://github.com/Dijaq/BackgroundSubstraction/blob/master/datos/CDnet2012.PNG?raw=true "Title")
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Dijaq/backgroundSubtraction.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## 3.3 Own video
+![Alt text](https://github.com/Dijaq/BackgroundSubstraction/blob/master/datos/OwnVideo.PNG?raw=true "Title")
