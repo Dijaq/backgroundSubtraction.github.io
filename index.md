@@ -43,6 +43,9 @@ or write "make exec"
 ## Video
 <iframe width="800" height="500" src="https://www.youtube.com/embed/Le7zD2T532w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Highway
+<iframe width="787" height="578" src="https://www.youtube.com/embed/k15uat4sKRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Fuentes
 - [1] Lili Guo, Dan Xu, and Zhenping Qiang, “Background Subtraction using Local SVD Binary Pattern”.
 - [2] M. Hofmann, P. Tiefenbacher, and G. Rigoll, “Background segmentation with feedback: The pixel-based adaptive segmenter.”.
